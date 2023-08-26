@@ -1,0 +1,287 @@
+
+.navbar-brand img {
+  display: block;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px; 
+}
+
+.navbar{
+  color: white; 
+}
+
+.navbar-nav .btn {
+  background-color: #662eff; 
+  color: #ffffff; 
+  border-color: #662eff; 
+  margin-left: 20px;
+  border-radius: 12px;
+  margin-left: 0; 
+}
+@media (max-width: 991px) {
+  .navbar-nav .btn {
+    margin-left: -1px; 
+  }
+
+  .navbar-nav{
+    margin-left: 30px
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav-item {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .btn {
+    margin-top: 10px;
+    margin-right: -8px;
+  }
+}
+
+@font-face {
+  font-family: 'ExtraLight';
+  src: url('Sofia Font/Sofia Pro Extra Light.ttf') format('truetype');
+}
+
+@font-face {
+font-family:"bold";
+src: url('Sofia Font/Sofia Pro Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'SemiBold' ;
+  src: url("Sofia Font/Sofia Pro Semi Bold.ttf") format('truetype');
+}
+
+@font-face {
+font-family:'medium' ;
+src: url('Sofia Font/Sofia Pro Medium.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'light' ;
+src: url('Sofia Font/Sofia Pro Light.ttf') format('truetype'); 
+}
+
+@font-face {
+font-family:'black';
+src: url('Sofia Font/Sofia Pro Black.ttf') format('truetype');
+}
+
+@font-face {
+font-family:'RegularItalic';
+src: url('Sofia Font/Sofia\ Pro\ Regular\ italic.ttf') format('truetype');
+}
+
+.nav-link{
+  font-family: 'light';
+}
+
+.btn{
+  font-family: 'SemiBold';
+}
+
+.image-section{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(hosting-quiz-for-school-students.png);
+  background-size: cover;
+}
+
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  display: flex;
+  flex-direction: column; /* Add this line to stack text elements vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bold{
+  font-family: 'bold';
+  color: white;
+  font-size:55px;
+
+}
+.bold2{
+  color: #ffc73b;
+}
+.light{
+  font-family: 'light';
+  color: white;
+  padding-top: 15px;
+}
+
+
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Change to vertical stacking */
+  align-items: center;
+  text-align: center;
+  margin:20px;
+  max-width: 85%; /* Adjust the maximum width of the text */
+  margin: 0 auto; 
+  font-size: larger;
+}
+
+.content img {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 20px; /* Add spacing between image and text */
+}
+
+.center-section {
+  text-align: center;
+}
+
+.header {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.header:first-child {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: -10px 20px; /* Adjust the horizontal margin */
+    max-width: 80%; /* Adjust the maximum width of the text */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+
+  .content p {
+    margin-top: 5px; /* Add a bit of spacing between image and text */
+    line-height: 1.4; /* Adjust line height for compactness */
+    font-size: 16px; /* Adjust font size for compactness */
+  }
+
+  .content img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px auto; /* Adjust spacing */
+  }
+}
+
+
+.head{
+  color:#662eff;
+  font-family: 'SemiBold';
+  text-align: center;
+}
+
+.content{
+  font-family: 'medium';
+}
+/* Footer Styles */
+.footer {
+  background-color: #662eff;
+  padding: 25px 0;
+  width: 100%; /* Remove width of 100vw, unnecessary for a footer */
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex-basis: calc(25% - 20px);
+  margin-right: 20px;
+}
+
+.footer-column h6{
+  color: #fff;
+  font-family: 'ExtraLight';
+}
+
+.footer-column h5 {
+  margin-bottom: 15px;
+  color: #ffc73b;
+  font-family: 'SemiBold';
+  }
+
+.small-footer {
+  text-align: right; /* Center align for mobile devices */
+  margin-top: 20px;
+  font-family: 'ExtraLight';
+  color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 767px) {
+  .footer-columns {
+    flex-direction: column; /* Stack columns in a vertical layout */
+    align-items: center; /* Center-align columns horizontally */
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+    margin-right: 0; /* Remove right margin on smaller screens */
+    flex-basis: auto; /* Let columns take full width on small screens */
+    text-align: center; /* Center-align text in columns */
+  }
+
+  .small-footer {
+    margin-right: 0; /* Remove margin for better alignment */
+  }
+}
+
+@media (max-width: 1180px) {
+  .small-footer {
+    text-align: center; /* Center align on smaller screens */
+  }
+}
+
+
+.center-section{
+  padding-bottom: 120px;
+  padding-top: 100px;
+}
+
+.header1{
+  color: #662eff;
+  font-family: 'SemiBold';
+}
+
+.header2{
+  font-family: 'medium';
+  color: black;
+}
+
+.header2:hover{
+  color:#66b0f0;
+}
+
+
+
+
